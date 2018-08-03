@@ -147,4 +147,24 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 html,
 body {
   font-size: 62.5%;
-  font-family: 'Poiret One', cursive; }
+  font-family: 'Poiret One', cursive;
+  color: #EFE9E7; }
+
+.grid {
+  display: grid;
+  background-color: aquamarine;
+  height: 100vh;
+  grid-template-columns: 1fr 2fr 1fr 1fr 2fr;
+  grid-template-rows: 1fr 2fr 1fr 1fr; }
+
+.grid-item {
+  border: 4px solid #EFE9E7; }
+
+.grid-item--primary {
+  background-color: #323031; }
+
+.grid-item--secondary {
+  background-color: #58FCEC; }
+
+.grid-item--accent {
+  background-color: #F15025; }

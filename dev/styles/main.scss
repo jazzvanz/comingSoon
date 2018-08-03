@@ -1,7 +1,33 @@
 @import 'setup';
+@import 'variables';
 
 html,
 body {
 	font-size: 62.5%;
 	font-family: 'Poiret One', cursive;
+	color: $notWhite;
+}
+
+.grid {
+	display: grid;
+	background-color: aquamarine;
+	height: 100vh;
+	grid-template-columns: 1fr 2fr 1fr 1fr 2fr;
+	grid-template-rows: 1fr 2fr 1fr 1fr;
+}
+
+.grid-item {
+	border: 4px solid $notWhite;
+}
+
+.grid-item--primary {
+	background-color: $notBlack;
+}
+
+.grid-item--secondary {
+	background-color: $electricBlue;
+}
+
+.grid-item--accent {
+	background-color: $flame;
 }
