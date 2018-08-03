@@ -8,16 +8,28 @@ body {
 	color: $notWhite;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
 .grid {
 	display: grid;
-	background-color: aquamarine;
 	height: 100vh;
 	grid-template-columns: 1fr 2fr 1fr 1fr 2fr;
 	grid-template-rows: 1fr 2fr 1fr 1fr;
+	grid-row-gap: 2px;
+	grid-column-gap: 2px;
+	background-color: $notWhite;
 }
 
 .grid-item {
-	border: 4px solid $notWhite;
+	padding: 2rem;
 }
 
 .grid-item--primary {
@@ -30,4 +42,9 @@ body {
 
 .grid-item--accent {
 	background-color: $flame;
+}
+
+.grid-item__title {
+	font-size: 4rem;
+	text-align: center;
 }

@@ -150,15 +150,26 @@ body {
   font-family: 'Poiret One', cursive;
   color: #EFE9E7; }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0; }
+
 .grid {
   display: grid;
-  background-color: aquamarine;
   height: 100vh;
   grid-template-columns: 1fr 2fr 1fr 1fr 2fr;
-  grid-template-rows: 1fr 2fr 1fr 1fr; }
+  grid-template-rows: 1fr 2fr 1fr 1fr;
+  grid-row-gap: 2px;
+  grid-column-gap: 2px;
+  background-color: #EFE9E7; }
 
 .grid-item {
-  border: 4px solid #EFE9E7; }
+  padding: 2rem; }
 
 .grid-item--primary {
   background-color: #323031; }
@@ -168,3 +179,7 @@ body {
 
 .grid-item--accent {
   background-color: #F15025; }
+
+.grid-item__title {
+  font-size: 4rem;
+  text-align: center; }
