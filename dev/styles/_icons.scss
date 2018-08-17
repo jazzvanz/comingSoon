@@ -1,0 +1,40 @@
+.grid__icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.icons {
+	// background-color: $primary;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+	.icons__container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 3px;
+		margin: 3px;
+	}
+
+	.icons__icon {
+		fill: $primarySolid;
+		width: 50px;
+		polygon,
+		ellipse {
+			stroke: $primarySolid;
+		}
+		svg {
+			width: 50px;
+			display: block;
+		}
+		&:hover {
+			fill: $electricBlue;
+			polygon,
+			ellipse {
+				stroke: $electricBlue;
+			}
+		}
+	}
+

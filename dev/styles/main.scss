@@ -1,10 +1,12 @@
 @import 'setup';
 @import 'variables';
+@import 'media';
 
 html,
 body {
 	font-size: 62.5%;
-	font-family: 'Poiret One', cursive;
+	// font-family: 'Poiret One', cursive;
+	font-family: 'Varela Round', sans-serif;
 	color: $notWhite;
 }
 
@@ -21,30 +23,64 @@ p {
 .grid {
 	display: grid;
 	height: 100vh;
-	grid-template-columns: 1fr 2fr 1fr 1fr 2fr;
-	grid-template-rows: 1fr 2fr 1fr 1fr;
-	grid-row-gap: 2px;
-	grid-column-gap: 2px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 2fr 1fr;
+	// grid-row-gap: 2px;
+	// grid-column-gap: 2px;
 	background-color: $notWhite;
+	justify-items: center;
+	align-items: stretch;
 }
 
 .grid-item {
 	padding: 2rem;
+	width: 100%;
 }
 
+// Colors
 .grid-item--primary {
 	background-color: $notBlack;
 }
 
 .grid-item--secondary {
-	background-color: $electricBlue;
+	// background-color: $electricBlue;
 }
 
 .grid-item--accent {
-	background-color: $flame;
+	// background-color: $flame;
 }
 
+.grid-item__title-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+// Name Block
 .grid-item__title {
 	font-size: 4rem;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 	text-align: center;
 }
+
+// Headline Block
+.grid-item__headline-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.grid-item__headline {
+	font-size: 3rem;
+	line-height: 4rem;
+	text-transform: uppercase;
+	text-align: center;
+	width: 80%;
+}
+
+@import 'layout';
+
+// Blocks
+@import 'icons';
+@import 'about';
