@@ -7,7 +7,7 @@ body {
 	font-size: 62.5%;
 	// font-family: 'Poiret One', cursive;
 	font-family: 'Varela Round', sans-serif;
-	color: $notWhite;
+	color: $notBlack;
 }
 
 h1,
@@ -33,7 +33,7 @@ p {
 }
 
 .grid-item {
-	padding: 2rem;
+	padding: 1rem;
 	width: 100%;
 }
 
@@ -84,3 +84,4 @@ p {
 // Blocks
 @import 'icons';
 @import 'about';
+@import 'footer';

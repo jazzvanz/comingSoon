@@ -1,0 +1,13 @@
+.footer {
+	display: flex;
+	flex-direction: column-reverse;
+	height: 100%;
+}
+
+	.footer__copy {
+		font-size: 1rem;
+	}
+
+	.footer__description {
+		display: block;
+	}

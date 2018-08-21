@@ -148,7 +148,7 @@ html,
 body {
   font-size: 62.5%;
   font-family: 'Varela Round', sans-serif;
-  color: #EFE9E7; }
+  color: #323031; }
 
 h1,
 h2,
@@ -169,7 +169,7 @@ p {
   align-items: stretch; }
 
 .grid-item {
-  padding: 2rem;
+  padding: 1rem;
   width: 100%; }
 
 .grid-item--primary {
@@ -199,7 +199,7 @@ p {
   width: 80%; }
 
 .grid-item {
-  border: 5px double rgba(233, 97, 97, 0.7); }
+  border: 5px solid rgba(233, 97, 97, 0.7); }
 
 .grid-item:first-child {
   grid-column-start: 1;
@@ -266,7 +266,19 @@ p {
       stroke: #58FCEC; }
 
 .about__subtitle {
-  font-size: 2rem; }
+  font-size: 2rem;
+  color: #EFE9E7; }
 
 .about__blurb {
   font-size: 1.8rem; }
+
+.footer {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100%; }
+
+.footer__copy {
+  font-size: 1rem; }
+
+.footer__description {
+  display: block; }
