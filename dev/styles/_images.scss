@@ -1,0 +1,13 @@
+.grid-item__image {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.grid-item__image--fun {
+	background-image: url(../../assets/collage_jazz.jpeg);
+}
+
+.grid-item__image--work {
+	background-image: url(../../assets/officeBureau_jazz.jpg);
+}

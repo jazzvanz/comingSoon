@@ -164,16 +164,14 @@ p {
   height: 100vh;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 2fr 1fr;
-  background-color: #EFE9E7;
+  background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
   justify-items: center;
   align-items: stretch; }
 
 .grid-item {
   padding: 1rem;
-  width: 100%; }
-
-.grid-item--primary {
-  background-color: #323031; }
+  width: 100%;
+  background-color: transparent; }
 
 .grid-item__title-container {
   display: flex;
@@ -184,12 +182,37 @@ p {
   font-size: 4rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  color: #EFE9E7;
+  padding: 10px 20px 7px 20px;
+  position: relative;
+  margin-bottom: 10px; }
+  .grid-item__title:before, .grid-item__title:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    border-radius: 10px;
+    display: block;
+    background-color: #EFE9E7;
+    z-index: 9; }
+  .grid-item__title:before {
+    top: 0; }
+  .grid-item__title:after {
+    bottom: 0; }
+
+.grid-item__subtitle {
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px; }
 
 .grid-item__headline-container {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  color: #EFE9E7; }
 
 .grid-item__headline {
   font-size: 3rem;
@@ -198,8 +221,11 @@ p {
   text-align: center;
   width: 80%; }
 
+.grid-item__textblock {
+  color: #EFE9E7; }
+
 .grid-item {
-  border: 2px solid rgba(233, 97, 97, 0.7); }
+  border: 2px solid #801357; }
 
 .grid-item:first-child {
   grid-column-start: 1;
@@ -233,6 +259,17 @@ p {
   grid-column-start: 4;
   grid-column-end: 6; }
 
+.grid-item__image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.grid-item__image--fun {
+  background-image: url(../../assets/collage_jazz.jpeg); }
+
+.grid-item__image--work {
+  background-image: url(../../assets/officeBureau_jazz.jpg); }
+
 .grid__icons {
   display: flex;
   justify-content: center;
@@ -258,7 +295,8 @@ p {
   .icons__icon .logo {
     fill: #323031; }
   .icons__icon .icon__angle {
-    fill: #e96161; }
+    fill: #e96161;
+    stroke: none; }
   .icons__icon:hover .icon__outline {
     fill: #e96161; }
   .icons__icon svg {

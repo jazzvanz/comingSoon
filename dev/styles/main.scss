@@ -27,7 +27,7 @@ p {
 	grid-template-rows: 1fr 1fr 2fr 1fr;
 	// grid-row-gap: 2px;
 	// grid-column-gap: 2px;
-	background-color: $notWhite;
+	background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
 	justify-items: center;
 	align-items: stretch;
 }
@@ -35,11 +35,12 @@ p {
 .grid-item {
 	padding: 1rem;
 	width: 100%;
+	background-color: transparent;
 }
 
 // Colors
 .grid-item--primary {
-	background-color: $notBlack;
+	// background-color: $notBlack;
 }
 
 .grid-item--secondary {
@@ -62,6 +63,35 @@ p {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	text-align: center;
+	color: $notWhite;
+	padding: 10px 20px 7px 20px;
+	position: relative;
+	margin-bottom: 10px;
+	&:before,
+	&:after { 
+		content:"";
+		position: absolute;
+		left: 0;
+		right: 0;
+		height: 3px;
+		border-radius: 10px;
+		display: block;
+		background-color: $notWhite;
+		z-index: 9;
+	}
+	&:before {
+		top: 0;
+	}
+	&:after {
+		bottom: 0;
+	}
+}
+
+.grid-item__subtitle {
+	font-size: 1.5rem;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
 }
 
 // Headline Block
@@ -69,6 +99,8 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	color: $notWhite;
+	// background-color: $notBlack;
 }
 
 .grid-item__headline {
@@ -79,9 +111,14 @@ p {
 	width: 80%;
 }
 
+.grid-item__textblock {
+	color: $notWhite;
+}
+
 @import 'layout';
 
 // Blocks
+@import 'images';
 @import 'icons';
 @import 'about';
 @import 'footer';
